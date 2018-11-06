@@ -3,7 +3,6 @@ layout: post
 title:  "Markdown Test"
 date:   2018-11-06 08:00
 categories: markdown
-comments: true
 ---
 
 # 인용 (ex: > hello)

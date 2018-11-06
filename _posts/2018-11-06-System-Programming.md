@@ -3,7 +3,6 @@ layout: post
 title:  "System Programming"
 date:   2018-11-06 08:00
 categories: system programming, study
-comments: true
 ---
 # 책 소개
 >  [Computer Systems. A Programmer's Perspective] - Bryant, O'Hallaron (김형신 옮김) (제3판)
@@ -49,13 +48,22 @@ comments: true
 * 보안 약점 피하기 가능
 
 ## <1.4> 프로세서는 메모리에 저장된 instruction 을 읽고 해석한다.
+* 하드웨어 조직 중 메모리에 저장된 instruction 을 프로세서(CPU)가 해석해서 실행 
 * 시스템의 하드웨어 조직
 
     * <img src="/resource/img/systemprogramming(1).jpg" width="400px" height="300px">
-    * 버스 : 
-    * 입출력 장치 : 
-    * 메인 메모리 : 
-    * 프로세서 : 
+    * 버스
+        - 시스템 내를 관통하는 전기적 배선군
+        - 컴포넌트들 간에 바이트 정보들을 전달
+        - 워드라고 하는 고정 크기의 바이트 단위로 데이타를 전송 ( 32 bit 운영 체제는 1 word = 32bit, 64 bit 운영 체제는 1 word = 64 bit)
+    * 입출력 장치 
+        - 시스템과 외부 세계와의 연결을 담당
+    * 메인 메모리 
+        - 프로세서가 프로그램을 실행하는 동안 데이터와 프로그램을 모두 저장하는 임시 저장장치
+    * 프로세서
+        - CPU (주처리장치)
+        - 메인 메모리에 저장된 인스트럭션(일련의 bit)들을 해독하는 엔진 
+
 * hello 프로그램의 실행
 
 ## <1.5> 캐시가 중요하다.
