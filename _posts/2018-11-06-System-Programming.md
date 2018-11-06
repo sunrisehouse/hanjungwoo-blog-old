@@ -49,7 +49,7 @@ comments: true
 * 보안 약점 피하기 가능
 
 ## <1.4> 프로세서는 메모리에 저장된 instruction 을 읽고 해석한다.
-<img src="/assets/img/systemprogramming(1).jpg">
+<img src="/resource/img/systemprogramming(1).jpg">
 ## <1.5> 캐시가 중요하다.
 
 ## <1.6> 저장장치들은 계층 구조를 이룬다.
