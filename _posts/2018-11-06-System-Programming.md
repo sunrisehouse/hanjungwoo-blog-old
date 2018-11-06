@@ -12,17 +12,22 @@ comments: true
 
 ## <1.1> 정보는 비트와 컨텍스트로 이루어진다.
 * 비트 : 모든 시스템 내의 정보( 디스크 파일, 메모리상의 프로그램, 네트워크 통해 전송되는 데이터) 는 비트들로 표시 된다.
+
 * 컨텍스트 : 이 비트들을 어떻게 해석할 지 라고 생각한다. 동일한 일련의 비트(or 바이트) 가 다른 컨텍스트에서 다른 기계어 명령을 의미할 수 있다. 
+
 * 일련의 2진수(비트)와 그 비트를 어떻게 해석할지(컨텍스트) 로 정보가 이루어져있다.
 
 ## <1.2> 프로그램은 다른프로그램에 의해 다른 형태로 번역된다.
 * 우리가 작성한 텍스트 파일은 다른 프로그램( 전처리기, 컴파일러, 어셈블러, 링커) 등에 의해서 실행 가능한 파일로 번역 된다.
+
 * C 프로그램 번역 과정 (변화 과정, 컴파일 과정)
     1. Source Program (or source file) = hello.c
     2. Modified Source Program = hello.i
     3. Assembly Program = hello.s
     4. Relocatable Object Programs = hello.o
     5. Executable Object Programs = hello
+
+
 * 번역하는(변화 시켜주는) 프로그램
     1. 전처리기(pre-processor)
         - hello.c -> hello.i
@@ -44,7 +49,9 @@ comments: true
 * 보안 약점 피하기 가능
 
 ## <1.4> 프로세서는 메모리에 저장된 instruction 을 읽고 해석한다.
+<img src="./_image/systemprogramming(1)">
 ## <1.5> 캐시가 중요하다.
+
 ## <1.6> 저장장치들은 계층 구조를 이룬다.
 ## <1.7> 운영체제는 하드웨어를 관리한다.
 ## <1.8> 시스템은 네트워크를  사용하여 다른 시스템과 통신한다.
