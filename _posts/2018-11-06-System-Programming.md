@@ -49,9 +49,15 @@ comments: true
 * 보안 약점 피하기 가능
 
 ## <1.4> 프로세서는 메모리에 저장된 instruction 을 읽고 해석한다.
-<img src="/resource/img/systemprogramming(1).jpg" width="400px" height="300px">
+* 시스템의 하드웨어 조직
+    <img src="/resource/img/systemprogramming(1).jpg" width="400px" height="300px">
+    * 버스 : 
+    * 입출력 장치
+    * 메인 메모리
+    * 프로세서
+* hello 프로그램의 실행
 ## <1.5> 캐시가 중요하다.
-
+<img src="/resource/img/systemprogramming(2).jpg" width="400px" height="300px">
 ## <1.6> 저장장치들은 계층 구조를 이룬다.
 ## <1.7> 운영체제는 하드웨어를 관리한다.
 ## <1.8> 시스템은 네트워크를  사용하여 다른 시스템과 통신한다.
