@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Markdown 효과 보기"
+title:  "Markdown Test"
 date:   2018-11-06 08:00
 categories: markdown
 comments: true
