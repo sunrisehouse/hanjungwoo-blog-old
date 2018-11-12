@@ -26,16 +26,16 @@ categories: Beacon
     beaconManager.enableForegroundServiceScanning(notificationcompatBuilder_Scannging.build(),456);
     beaconManager.setEnableScheduledScanJobs(false);
 
-# 에러
+# Error
 
-## Enter/Exit 에러 
+## Enter/Exit Error
     
 * 상황 : 백그라운드 비콘 스캔을 해 놓은 상태에서 비콘과 스마트폰은 가만히 있는데 시간이 지나면서 가끔 혼자서 Enter/Exit 가 반복된다.
     
-### 에러 테스트 1 
+### Error Test 1 
 ( Exit 발생 시키는 시간 : 10초 // 스캔 한 싸이클 1.1초 // 스캔 싸이클 사이 시간 0초 )
 
-1. 스마트폰 1개 / 비콘 2개 (비콘 A,B)
+1. One SmartPhone  / Two Beacon  ( Beacon A,B )
 
     * 비콘 2개를 켜놓은 상태로 스캔을 계속 해 보았다.
     * <img src="/resource/img/beacon_error1.PNG" width="800px" height="150px">
@@ -44,7 +44,7 @@ categories: Beacon
     * 한 비콘 신호는 계속 감지 되는 것으로 보아 비콘 스캔은 꺼지지 않은 것으로 보인다.
     * 그러면 비콘이 신호를 쏘지 않는 것인가??
 
-2. 스마트폰 2개(스마트폰1,2) / 비콘 2개 (비콘A,B)
+2. Two SmartPhone (스마트폰 1,2 ) / Two Beacon ( Beacon A,B )
 
     * 똑같은 어플리케이션을 스마트폰 2대에 설치하고 비콘 2개를 켜놓은 상태로 스캔을 해 보았다.
     * 스마트폰 1 <img src="/resource/img/beacon_error2.1.PNG" width="800px" height="150px">
