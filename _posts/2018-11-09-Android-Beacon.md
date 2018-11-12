@@ -18,7 +18,7 @@ categories: Beacon
         1. 스마트폰 1개 / 비콘 2개
 
             * 비콘 2개를 켜놓은 상태로 스캔을 계속 해 보았다.
-            * <img src="/resource/img/beacon_error1.PNG" width="600px" height="150px">
+            * <img src="/resource/img/beacon_error1.PNG" width="800px" height="150px">
             * 비콘 신호 중 한 개만 10초 이상 감지되지 않는다.
             * 한 비콘 신호는 계속 감지 되는 것으로 보아 비콘 스캔은 꺼지지 않은 것으로 보인다.
             * 그러면 비콘이 신호를 쏘지 않는 것인가??
@@ -26,8 +26,8 @@ categories: Beacon
         2. 스마트폰 2개(스마트폰1,2) / 비콘 2개 (비콘A,B)
 
             * 똑같은 어플리케이션을 스마트폰 2대에 설치하고 비콘 2개를 켜놓은 상태로 스캔을 해 보았다.
-            * 스마트폰 1 <img src="/resource/img/beacon_error2.1.PNG" width="600px" height="150px">
-            * 스마트폰 2 <img src="/resource/img/beacon_error2.2.PNG" width="600px" height="150px">
+            * 스마트폰 1 <img src="/resource/img/beacon_error2.1.PNG" width="800px" height="150px">
+            * 스마트폰 2 <img src="/resource/img/beacon_error2.2.PNG" width="800px" height="150px">
             * 스마트폰1 에서 32초에 비콘A 가 읽히고 11초 뒤인 43초에 비콘 A 가 다시 읽혔다. 중간에 비콘 B 는 계속해서 감지되고 있다. 
             * 스마트폰2 에서 32초에 비콘A 가 읽혔다. 하지만 비콘 신호는 32초와 43초 사이에 계속해서 감지되고 있다.
             * 비콘이 신호를 쏘지 않는 것은 아니었다.
