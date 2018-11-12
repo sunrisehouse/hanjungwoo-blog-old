@@ -1,12 +1,30 @@
 ---
 layout: post
-title:  "Beacon Background Monitoring"
+title:  "Beacon Error Test"
 date:   2018-11-12 08:00
 categories: Beacon
 ---
 # 사용한 비콘 스캔 라이브러리
 
-    android-beacon-library-2.15.2
+    implementation 'org.altbeacon:android-beacon-library:2.15.2'
+
+# 안드로이드 어플리케이션 정보
+
+    compileSdkVersion 28
+    minSdkVersion 21
+    targetSdkVersion 28
+
+# 비콘 라이브러리 활용 정보
+
+    regionBootstrap 을 사용.
+
+    beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
+    beaconManager.setForegroundScanPeriod(1100L);
+    beaconManager.setBackgroundScanPeriod(1100L);
+    beaconManager.setForegroundBetweenScanPeriod(0);
+    beaconManager.setBackgroundBetweenScanPeriod(0);
+    beaconManager.enableForegroundServiceScanning(notificationcompatBuilder_Scannging.build(),456);
+    beaconManager.setEnableScheduledScanJobs(false);
 
 # 에러.
 
@@ -31,4 +49,4 @@ categories: Beacon
             * 스마트폰1 에서 32초에 비콘A 가 읽히고 11초 뒤인 43초에 비콘 A 가 다시 읽혔다. 중간에 비콘 B 는 계속해서 감지되고 있다. 
             * 스마트폰2 에서 32초에 비콘A 가 읽혔다. 하지만 비콘 신호는 32초와 43초 사이에 계속해서 감지되고 있다.
             * 비콘이 신호를 쏘지 않는 것은 아니었다.
-            * 그저 한 신호를 10초 이상 감지하지 못하는 상황이 있다.
+            * 그저 한 신호를 10초 이상 감지하지 못하는 상황이 있다. 이유가 무엇일까
