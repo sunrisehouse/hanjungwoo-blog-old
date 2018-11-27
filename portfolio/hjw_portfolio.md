@@ -2,4 +2,4 @@
 layout: portfolio
 ---
 
-hello it's me
+hello i'm jungwoo
