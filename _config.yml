@@ -53,6 +53,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "portfolio/hjw_portfolio"
+    values:
+      layout: "portfolio"
 
 kramdown:
   input: GFM
