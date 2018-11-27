@@ -9,7 +9,7 @@ description: >
 # Your information
 email: hanjungwoo1102@gmail.com
 author: HanJungwoo
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+avatar: "/resource/img/systemprogramming(4).jpg""
 profile: Hi.
 #twitter_username: twitter_username
 #github_username:  github_username
@@ -30,6 +30,7 @@ header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
     About: /about/
     Category: /category/
+    Portfolio: /portfolio/
 
 permalink: /archivers/:title
 plugins:
