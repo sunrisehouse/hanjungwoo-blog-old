@@ -18,19 +18,26 @@ permalink: /portfolio/
         #portfolio_body{
 
         }
-        #project_list {
-            list-style: none;
-        }
         
-        #project_list > li :after {
+        #portfolio_body>div {
+            margin:100px 200px;
+        }
+
+        #portfolio_body>div:after {
             clear:both;
             content: '';
             display:block;
+
         }
 
-        #project_list > li > div {
-            float:left;
+        #portfolio_body> div>div {
+            float:left;   
+        }    
+        
+        #portfolio_body > div > div:first-child{
         }
+
+        
 
     </style>
   </head>
@@ -46,39 +53,36 @@ permalink: /portfolio/
         
         <section id="portfolio_body">
             <div>
-                <ul id="project_list">
-                    <li>
-                        <div>
-                            <img src="/resource/img/hjw.png" width="250px" height="200px"> 
-                        </div>
-                        <div>
-                            <h3>Hologram AI Speaker</h3>
-                            <p>Android  Linux</p>
-                            <p>노래나 날씨에 맞는 영상을 틀어주는 홀로그램 스피커</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="/resource/img/hjw.png" width="250px" height="200px">
-                        </div>
-                        <div>
-                            <h3>Web Site - CallabT</h3>
-                            <p>Html  Css  Javascript  Node.js  Mysql</p>
-                            <p>회사 홈페이지 Back end 부터 Front end 까지 제작</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="/resource/img/hjw.png" width="250px" height="200px">
-                        </div>
-                        <div>
-                            <h3>Smart Pouch</h3>
-                            <p>Android</p>
-                            <p>beacon 을 이용해 물건을 분실하기 전에 알림을 주는 어플리케이션</p>
-                        </div>
-                    </li>
-                </ul>
+                <div>
+                    <img src="/resource/img/hjw.png" width="250px" height="200px"> 
+                </div>
+                <div>
+                    <h3>Hologram AI Speaker</h3>
+                    <p>Android  Linux</p>
+                    <p>노래나 날씨에 맞는 영상을 틀어주는 홀로그램 스피커</p>
+                </div>
             </div>
+            <div>
+                <div>
+                    <img src="/resource/img/hjw.png" width="250px" height="200px">
+                </div>
+                <div>
+                    <h3>Web Site - CallabT</h3>
+                    <p>Html  Css  Javascript  Node.js  Mysql</p>
+                    <p>회사 홈페이지 Back end 부터 Front end 까지 제작</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="/resource/img/hjw.png" width="250px" height="200px">
+                </div>
+                <div>
+                    <h3>Smart Pouch</h3>
+                    <p>Android</p>
+                    <p>beacon 을 이용해 물건을 분실하기 전에 알림을 주는 어플리케이션</p>
+                </div>
+            </div>
+        
         </section>
 
     </div>
