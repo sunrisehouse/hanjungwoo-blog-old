@@ -18,9 +18,10 @@ permalink: /portfolio/
         }
 
         #portfolio_body{
-
+            /* 전체 프로젝트 div */
         }
         #portfolio_body>div {
+            /* 한 프로젝트 전체 div */
             margin:100px 150px;
         }
         #portfolio_body>div:after {
@@ -29,18 +30,22 @@ permalink: /portfolio/
             display:block;
 
         }
-        #portfolio_body> div>div {
+        #portfolio_body> div> div {
+            /* 한 프로젝트 안에 모든 div */
             float:left;   
         }    
         #portfolio_body > div > div:first-child{
+            /* 한 프로젝트 대표 이미지 들어있는 div */
             margin-left: 25px;
             margin-right: 25px;
         }
-        #portfolio_body > div > div > img{
+        #portfolio_body > div > div > img{ 
+            /* 한 프로젝트 대표 이미지 속성 */
             width:250px; 
             height:200px;
         }
         #portfolio_body > div > div:nth-child(2){
+            /* 한 프로젝트 설명 div */
             width: 500px;
         }
 
