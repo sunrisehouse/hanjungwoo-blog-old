@@ -8,7 +8,7 @@ categories: study
 >  [Computer Systems. A Programmer's Perspective] - Bryant, O'Hallaron (김형신 옮김) (제3판)
 
 # [1장] 컴퓨터 시스템으로의 여행
-- <a href="/"> 보러가기  </a>
+- <a href="/archivers/System-Programming-Ch1">read more ></a>
 
 # [2장] 정보의 표현과 처리
 ## <2.1> 정보의 저장
@@ -37,7 +37,7 @@ categories: study
 ## <4.5> 파이프라인형 Y86-64 의 구현
 
 # [5장] 프로그램 성능 최적화 하기
-- <a href="/"> 보러가기  </a>
+- <a href="/archivers/System-Programming-Ch5">read more ></a>
 
 # [6장] 메모리 계층구조
 ## <6.1> 저장장치 기술
