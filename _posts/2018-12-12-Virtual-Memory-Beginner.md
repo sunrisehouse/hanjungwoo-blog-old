@@ -2,7 +2,7 @@
 layout: post
 title:  "Virtual Memory for beginer"
 date:   2018-12-12 08:00
-categories: Study
+categories: study
 ---
 
 # 가상 메모리 왜 알아야 할까
@@ -52,10 +52,13 @@ categories: Study
 
 # 의문점
 
-- 모든 프로세스가 FFFFFFFF byte(4GB) 를 할당 받는 것인가?? - yes
+- 모든 프로세스가 FFFFFFFF byte(4GB) 를 할당 받는 것인가?? 
+    - yes
 - 그러면 어떻게 여러 프로세스를 돌릴 수 있는 것인가?? 
-- FFFFFFFF 가 의미하는 것은?? - 주소의 범위 ( 00000000 ~ FFFFFFFF) 
-- 프로세스마다 0~FFFFFFFF 까지 주소가 할당되는데 다른 프로세스에서 같은 주소값이 할당이 될 수 있나?? - yes
+- FFFFFFFF 가 의미하는 것은?? 
+    - 주소의 범위 ( 00000000 ~ FFFFFFFF) 
+- 프로세스마다 0~FFFFFFFF 까지 주소가 할당되는데 다른 프로세스에서 같은 주소값이 할당이 될 수 있나?? 
+    - yes
 
 # 참조
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Beacon Error Test"
 date:   2018-11-12 08:00
-categories: Beacon
+categories: beacon
 ---
 # 사용한 비콘 스캔 라이브러리
 
