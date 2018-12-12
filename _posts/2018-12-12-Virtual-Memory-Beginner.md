@@ -35,14 +35,14 @@ categories: Study
 
 - 가상 메모리 내부 구조
     - 간단히 
-        - <img src="/resource/img/virtualmemory_beginer(1).png" width="400px" height="200px">
+        - <img src="/resource/img/virtualmemory_beginer(1).png" width="800px" height="200px">
         - 한 프로세스가 실행되면 한 프로세스마다 00000000 ~ ffffffff 의 주소가 할당 된다.
         - Stack : 함수 안 **지역 변수** 들이 저장된다. 크기가 변한다. 아래로 커진다. ( 이미 변수의 크기가 정해져 있을 때 )
         - Heap : malloc 으로 정해지지 않은 크기의 메모리를 할당해야 할 때 이 곳에 할당 된다. ( 런타임에 그 크기가 정해질 때 ), free 해주지 않으면 heap 영역이 가득차서 더 이상 할당할 곳이 없어지게 되고 메모리 누수가 발생한다.
         - Code/Data : 실행될 기계어 코드들 그리고 전역 변수들이 저장되어 있다. 없어지지 않기 때문에 크기가 변하지 않는다. 
     
     - 좀 자세히
-        - <img src="/resource/img/virtualmemory_beginer(2).jpg" width="400px" height="200px">
+        - <img src="/resource/img/virtualmemory_beginer(2).jpg" width="800px" height="200px">
         - kernel virtual memory
         - user stack
         - memory-mapped region for shared libraries

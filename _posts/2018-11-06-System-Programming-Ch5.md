@@ -2,7 +2,6 @@
 layout: post
 title:  "System Programming Chapter 05"
 date:   2018-11-06 08:00
-categories: study
 ---
 
 # [5장] 프로그램 성능 최적화 하기
