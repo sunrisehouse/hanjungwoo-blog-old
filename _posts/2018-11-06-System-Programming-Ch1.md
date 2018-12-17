@@ -2,6 +2,7 @@
 layout: post
 title:  "System Programming Chapter 01"
 date:   2018-11-06 08:00
+categories: study
 ---
 # [1장] 컴퓨터 시스템으로의 여행
 
