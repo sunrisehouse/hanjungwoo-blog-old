@@ -29,10 +29,11 @@ categories: beacon
 # Error
 
 ## Enter/Exit Error
-    
+
 * 상황 : 백그라운드 비콘 스캔을 해 놓은 상태에서 비콘과 스마트폰은 가만히 있는데 시간이 지나면서 가끔 혼자서 Enter/Exit 가 반복된다.
-    
+
 ### Error Test 1 
+
 ( Exit 발생 시키는 시간 : 10초 // 스캔 한 싸이클 1.1초 // 스캔 싸이클 사이 시간 0초 )
 
 1. One SmartPhone  / Two Beacon  ( Beacon A,B )

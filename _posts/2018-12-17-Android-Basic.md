@@ -30,6 +30,7 @@ categories: android
 
 ## 3-7) Notification
 
+## 3-8) Process 와 쓰레드
 
 # 4. 안드로이드 UI
 

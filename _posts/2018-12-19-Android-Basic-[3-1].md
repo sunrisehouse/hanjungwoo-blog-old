@@ -11,7 +11,7 @@ categories: android
 - 새로운 activity 시작되면 이전 activity 는 Back Stack 으로 push 되고 새로운 activity 는 사용자 focus 를 갖게 된다. (후입선출 방식)
 - 한 액티비티가 새로운 액티비티의 시작으로 인해 중단된 경우, 이 상태 변경은 액티비티의 수명 주기 Call back method 를 통해 알려진다. (onCreate, onStop ...)
 
-# Activity 생성
+## Activity 생성
 
 - Activity 의 Sub Class 를 생성 해야 한다. ( activity 를 상속받은 class 를 생성해야 한다.)
 - 가장 중요한 Activity class 의 콜백 메소드
@@ -24,19 +24,19 @@ categories: android
         - 사용자가 돌아오지 않을 수 있기 때문에 지속되어야 하는 변경사항을 커밋 해야 하는 곳 (variable, object 등을 저장)
 - 다른 콜백 메소드는 액티비티 중단이나 심지어 소멸을 초래할 수도 있는 예상치 못한 간섭을 처리하기 위해 필요 => Activity 생명주기 에서 자세히 논의
 
-# Activity 의 UI 구현
+## Activity 의 UI 구현
 
 - XML 레이아웃 파일을 사용해 디자인. 그리고 setContentView() 에 해당 레이아웃의 리소스 ID를 전달해서 activity 의 레이아웃을 설정.
 - ViewGroup 클래스나 View  클래스 에서 파생된 Object 를 이용해 각 디자인 요소를 제어 (ConstraintLayout, Button, Switch 등...)
 
-# Manifest 에서 Activity 선언
+## Manifest 에서 Activity 선언
 
 - 시스템에서 Acitivity에 Access 하려면 Manifest file 에서 선언해야 한다.
 - <.application> 요소의 하위 항목으로 <.activity> 를 추가한다.
 - Activity 의 레이블, 아이콘, UI 스타일용 테마와 같이 여러 특성을 지정할 수 있다. (https://developer.android.com/guide/topics/manifest/activity-element?hl=ko)
 - android:name 특성은 유일한 필수 특성 = 액티비티의 클래스 이름 지정
 
-## intent-filter 사용
+### intent-filter 사용
 
 - activity 요소 또한 여러 가지 인텐트 필터를 지정할 수 있다.
 - 암시적 인텐트에 응답하고자 하는 곳에 사용
