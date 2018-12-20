@@ -8,7 +8,7 @@ categories: android
 
 - Android 개발자가 되고 싶다.
 
-- 찾으면 다 나온다지만 그래도 이 정도는 **외우고** 있어야 할 것 같다.
+- 찾으면 다 나온다지만 그래도 이 정도는 **알고** 있어야 할 것 같다.
 
 
 # 2. 안드로이드 기본 개념
@@ -30,7 +30,7 @@ categories: android
 
 ## 3-7) Notification
 
-## 3-8) Process 와 쓰레드
+## 3-8) Process 와 Thread
 
 # 4. 안드로이드 UI
 

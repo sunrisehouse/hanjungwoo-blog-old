@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Android Basic [3-1] Activity"
-date:   2018-12-17 08:00
+date:   2018-12-19 08:00
 categories: android
 ---
 
