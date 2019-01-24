@@ -8,8 +8,8 @@ permalink: /category/
   <h1 class="page-heading">Category</h1>
   <p> s 
 {% assign site_categories = site.posts | map: 'category' %}
-
 {% for category in site_categories %}
+  <p>1</p>
   {{ category }}
 {% endfor %}
   </p>
