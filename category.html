@@ -6,13 +6,7 @@ permalink: /category/
 
 <div class="home">
   <h1 class="page-heading">Category</h1>
-  <p> s 
-{% assign site_categories = site.posts | map: 'category' %}
-{% for category in site_categories %}
-  <p>1</p>
-  {{ category }}
-{% endfor %}
-  </p>
+
   <ul class="post-list">
 
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
