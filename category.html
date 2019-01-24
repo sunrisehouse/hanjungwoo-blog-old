@@ -6,16 +6,17 @@ permalink: /category/
 
 <div class="home">
   <h1 class="page-heading">Category</h1>
+  <p>1</p>
   <ul>
-      {% for category_level1 in site.category %}{% if category_level1[0] != nil %}
+      {% for category_level1 in site.category %}{% if category_level1.first != nil %}
         <li>
           <p>{{ category_level1 }}</p>
           <ul>
-          {% for category_level2 in category_level1 %}{% if category_level2[0] != nil %}
+          {% for category_level2 in category_level1 %}{% if category_level2.first != nil %}
             <li>
               <p>{{ category_level2 }}</p>
               <ul>
-                {% for category_level3 in category_level2 %}{% if category_level3[0] != nil %}
+                {% for category_level3 in category_level2 %}{% if category_level3.first != nil %}
                 <li>
                   <p>{{ category_level3 }}</p>
                 </li>
