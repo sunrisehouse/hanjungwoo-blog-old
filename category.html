@@ -7,25 +7,6 @@ permalink: /category/
 <div class="home">
   <h1 class="page-heading">Category</h1>
 
-  <ul> category
-      
-      {% for category_level1 in site.category %}
-        <li>
-        <p>{{ category_level1 }}</p>
-        
-        <ul>
-        {% for category_level2 in category_level1 %}
-          <li>
-          <p>{{ category_level2 }}</p>
-          </li>
-        {% endfor %}
-        </ul>
-        
-        </li>
-      {% endfor %}
-      
-  </ul>
-
   <ul class="post-list">
 
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
