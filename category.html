@@ -7,8 +7,9 @@ permalink: /category/
 <div class="home">
   <h1 class="page-heading">Category</h1>
 
-  <ul class="post-list">
+  <p>cate : {{site.categories}}</p>
 
+  <ul class="post-list">
   {% capture categories %}
     {% for category in site.categories %}{{ category | first }}
       {% unless forloop.last %},{% endunless %}
