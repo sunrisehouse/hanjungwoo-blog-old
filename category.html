@@ -7,15 +7,15 @@ permalink: /category/
 <div class="home">
   <h1 class="page-heading">Category</h1>
   <ul> category
-  {%- for category_level1 in site.category -%}
+  {% for category_level1 in site.category %}
     <li>
-    {{ category_level1 }}
+    <p>{{ category_level1 }}</p>
     <ul>
-    {%- for category_level2 in category_level1 -%}
+    {% for category_level2 in category_level1 %}
       <li>
-      {{ category_level2 }}
+      <p>{{ category_level2 }}</p>
       </li>
-    {%- endfor -%}
+    {% endfor %}
     </ul>
     </li>
   {%- endfor %-}
