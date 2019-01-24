@@ -9,7 +9,7 @@ category: MyBlog
 
 ## 이전 Category 관리
 
-* <img src="/resource/img/blogcategorydepth(1).PNG" width="250px" height="500px">
+* <img src="/resource/img/blogcategorydepth(1).PNG" >
 * _posts 폴더에 post 들을 그냥 집어 넣었다.
 * <img src="/resource/img/blogcategorydepth(3).PNG" >
 * 이전에는 카테고리를 YAML 머릿말에서 관리했다. ( ex: categories: android )
@@ -37,6 +37,7 @@ category: MyBlog
 * <img src="/resource/img/blogcategorydepth(4).PNG">
 * 이 사진은 다음 코드를 찍어본 결과인데 각 category 계층에 포함 되는 모든 post 들을 불러오게 됐다.
     ``` html
-        <p>{{site.categories}}</p>
+        <!-- {} 인데 {{}} 로 바꿔야한다. github 올라갈 때 site.categories 를 처리해버리더라 -->
+        <p>{site.categories}</p>
     ```
 * 그래서 depth 는 어떻게 해결할까??
