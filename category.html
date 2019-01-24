@@ -16,7 +16,7 @@ permalink: /category/
           {% for category_level2 in category_level1 %}{% if category_level2.first != nil %}
             <li>
               <p>2. {{ category_level2[0] }}</p>
-              <p>category_level2.first</p>
+              <p>{{category_level2.first}}</p>
               <ul>
                 {% for category_level3 in category_level2 %}{% if category_level3.first != nil %}
                 <li>
