@@ -27,24 +27,25 @@
 <div class="col-box">
   <div class="col-box-title">Category</div>
   <ul>
-    {% for category_level1 in site.category %}
+    {% for category_level1 in site.category %}{% if category_level1 != nil %}
       <li>
-        <p>{{ category_level1 }}</p>
+        <p>{{ category_level1[0] }}</p>
         <ul>
-        {% for category_level2 in category_level1 %}
+        {% for category_level2 in category_level1 %}{% if category_level2 != nil %}
           <li>
-            <p>{{ category_level2 }}</p>
+            <p>{{ category_level2[0] }}</p>
             <ul>
-              {% for category_level3 in category_level2 %}
+              {% for category_level3 in category_level2 %}{% if category_level3 != nil %}
               <li>
-                <p>{{ category_level3 }}</p>
+                <p>{{ category_level3[0] }}</p>
               </li>
+              {% endif %} {% endfor %}
             </ul>
           </li>
-        {% endfor %}
+          {% endif %}{% endfor %}
         </ul>
       </li>
-    {% endfor %}  
+    {% endif %}{% endfor %}  
   </ul>
 </div>
 
