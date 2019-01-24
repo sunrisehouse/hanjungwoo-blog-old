@@ -33,6 +33,7 @@ category: MyBlog
 
 ### Depth
 
+#### Depth 늘리기
 * <img src ="/resource/img/blogcategorydepth(4).PNG"> 를 사용해본 결과 post 의 경로가 잘 나왔다. (폴더 구조를 카테고리처럼 안 나누고도 YAML 머릿말 categories 로도 가능한 것을 이제야 알아차렸다. 하지만 폴더 구조 나누는 것은 필요한 일이었으니까)
 * <img src ="/resource/img/blogcategorydepth(5).PNG"> 를 이용해 site.categories[0 ~ site.categories.size] 이용해 depth 를 표현하기가 쉽지 않았다. 높은 level 의 category 안에는 그 cateogry 안에 있는 모든 post 들이 다 들어있었기 때문.
 * 내가 생각한 방법
@@ -55,3 +56,7 @@ category: MyBlog
 
 * 하지만 depth 가 4 이상인 tree 를 만들려면 재귀 함수를 써야할 것 같은데 함수를 쓸 수 있나 모르겠다.
 * 그리고 카테고리를 수정하면 post 폴더의 구조와 _config.yml 에 저장되어 있는 category data 둘 다를 바꿔줘야 한다.
+
+#### leaf category 에 post 수 표시, <a> 로 category 페이지로 이동하기.
+
+* 다음은 카테고리 별로 post 수 표시하기랑 누르면 그 카테고리의 post 들이 나오게 하기다.
