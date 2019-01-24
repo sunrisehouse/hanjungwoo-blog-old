@@ -44,4 +44,14 @@ category: MyBlog
 
 * 관리하기 귀찮아도 3번이 제일 나을 것 같아서 3번 선택
 
+* <img src="/resource/img/blogcategorydepth(6).PNG">
 * category data 를 json 파일로 저장하려다가 _config.yml 에 저장하기로 했다.
+
+* <img src="/resource/img/blogcategorydepth(7).PNG">
+* _config.yml 에 저장되어 있는 category 들은 site.category 의 배열로 불러 올 수 있기 때문에 liquid 문법을 잘 이용해 작성한다.
+
+* <img src="/resource/img/blogcategorydepth(8).PNG">
+* 그러면 다음과 같은 depth 가 3 이상인 category tree 를 만들 수 있다.
+
+* 하지만 depth 가 4 이상인 tree 를 만들려면 재귀 함수를 써야할 것 같은데 함수를 쓸 수 있나 모르겠다.
+* 그리고 카테고리를 수정하면 post 폴더의 구조와 _config.yml 에 저장되어 있는 category data 둘 다를 바꿔줘야 한다.
