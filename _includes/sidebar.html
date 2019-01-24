@@ -27,7 +27,24 @@
 <div class="col-box">
   <div class="col-box-title">Category</div>
   <ul>
-    <li><a href=""></a></li>
+    {% for category_level1 in site.category %}
+      <li>
+        <p>{{ category_level1 }}</p>
+        <ul>
+        {% for category_level2 in category_level1 %}
+          <li>
+            <p>{{ category_level2 }}</p>
+            <ul>
+              {% for category_level3 in category_level2 %}
+              <li>
+                <p>{{ category_level3 }}</p>
+              </li>
+            </ul>
+          </li>
+        {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}  
   </ul>
 </div>
 
