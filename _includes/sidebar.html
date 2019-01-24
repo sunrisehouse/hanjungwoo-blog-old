@@ -29,15 +29,15 @@
   <ul>
     {% for category_level1 in site.category %}{%if category_level1[0] != nil%}
       <li>
-        <p>1. {{ category_level1[0] }}</p>
+        <p>{{ category_level1[0] }}</p>
         <ul>
         {% for category_level2 in category_level1[1] %}{%if category_level2[0] != nil%}
           <li>
-            <p>2. {{ category_level2[0] }}</p>
+            <p>{{ category_level2[0] }}</p>
             <ul>
               {% for category_level3 in category_level2[1] %}{%if category_level3[0] != nil%}
               <li>
-                <p>3. {{ category_level3[0] }}</p>
+                <p>{{ category_level3[0] }}</p>
               </li>
               {% endif %}{% endfor %}
             </ul>
