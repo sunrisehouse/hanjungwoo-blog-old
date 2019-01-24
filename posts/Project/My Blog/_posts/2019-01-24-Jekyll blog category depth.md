@@ -34,7 +34,7 @@ category: MyBlog
 ### Depth
 
 * 폴더 구조를 만들었지만 depth 가 생기는 것은 아니었다.
-* <img src="resource/img/blogcategorydepth(4).PNG">
+* <img src="/resource/img/blogcategorydepth(4).PNG">
 * 이 사진은 다음 코드를 찍어본 결과인데 각 category 계층에 포함 되는 모든 post 들을 불러오게 됐다.
     ``` html
         <p>{{site.categories}}</p>
