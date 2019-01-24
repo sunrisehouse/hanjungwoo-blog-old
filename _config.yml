@@ -63,3 +63,18 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   math_engine: mathjax
+
+category:
+  HanJungwoo:
+  Project:
+    Android Beacon:
+    C++ Builder Project:
+    My Blog:
+  Study:
+    Android:
+    ComputerScience:
+      System Programming:
+    MarkDown:
+    OpenCV:
+    Programming Language:
+      C#:
