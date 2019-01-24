@@ -2,7 +2,6 @@
 layout: post
 title:  "Android Basic [3-5] Intent and Intent filter"
 date:   2018-12-21 08:00
-categories: android
 ---
 
 # Intent 기본 사용 사례

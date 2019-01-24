@@ -2,7 +2,6 @@
 layout: post
 title:  "System Programming"
 date:   2018-11-06 08:00
-categories: study
 ---
 # 책 소개
 >  [Computer Systems. A Programmer's Perspective] - Bryant, O'Hallaron (김형신 옮김) (제3판)

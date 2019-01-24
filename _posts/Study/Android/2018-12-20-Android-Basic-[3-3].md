@@ -2,7 +2,6 @@
 layout: post
 title:  "Android Basic [3-3] Broadcasts"
 date:   2018-12-20 08:00
-categories: android
 ---
 # Broadcasts
 

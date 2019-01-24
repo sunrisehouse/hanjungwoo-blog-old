@@ -2,7 +2,6 @@
 layout: post
 title:  "Android Basic [3-2] Service"
 date:   2018-12-19 08:00
-categories: android
 ---
 
 # Service

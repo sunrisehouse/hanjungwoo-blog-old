@@ -2,7 +2,6 @@
 layout: post
 title:  "Android Basic"
 date:   2018-12-17 08:00
-categories: android
 ---
 # 1. Android 공부 목적
 

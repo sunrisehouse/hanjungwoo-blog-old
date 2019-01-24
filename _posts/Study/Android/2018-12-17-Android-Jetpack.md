@@ -2,7 +2,6 @@
 layout: post
 title:  "Android Jetpack"
 date:   2018-12-17 08:00
-categories: android
 ---
 
 # 공부 이유 / 목표

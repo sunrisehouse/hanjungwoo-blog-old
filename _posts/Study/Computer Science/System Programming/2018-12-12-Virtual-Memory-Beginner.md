@@ -2,7 +2,6 @@
 layout: post
 title:  "Virtual Memory for beginer"
 date:   2018-12-12 08:00
-categories: study
 ---
 
 # 가상 메모리 왜 알아야 할까
