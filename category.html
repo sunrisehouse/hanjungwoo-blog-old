@@ -22,16 +22,12 @@ permalink: /category/
       {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
       <h2 class="category" id="{{ word }}">{{ word }}</h2>
       <ul>
-        <p> 0 </p>
         {% for post in site.categories[word] %}
-          <p> 1 </p>
           {% if post.title != null %}
-            <p> 2 </p>
             <li><span>{{ post.date | date: "%b %d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
-      <p> 3 </p>
     {% endunless %}
   {% endfor %}
 
