@@ -7,7 +7,7 @@ permalink: /category/
 <div class="home">
   <h1 class="page-heading">Category</h1>
   <p> s 
-{% assign site_categories = site.pages | map: 'category' %}
+{% assign site_categories = site.posts | map: 'category' %}
 
 {% for category in site_categories %}
   {{ category }}
