@@ -8,7 +8,7 @@ permalink: /category/
   <h1 class="page-heading">Category</h1>
   <p>{{ site.category }}</p>
   <ul>
-      {% for category_level1 in site.category %}{if category_level1[0] != nil}
+      {% for category_level1 in site.category %}{%if category_level1[0] != nil%}
         <li>
           <p>1. {{ category_level1[0] }}</p>
           <ul>
