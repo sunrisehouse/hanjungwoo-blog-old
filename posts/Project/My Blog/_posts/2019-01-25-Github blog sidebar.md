@@ -31,3 +31,6 @@ date:   2019-01-25 08:00
 * <img src="/resource/img/blogsidebar(1).PNG">
 * 이 list 도 scroll 을 내리는 동안 따라다녔으면 좋겠다고 생각했기 때문에 easybook Theme 에 이미 구현되어 있던 TOC 가 따라다니는 기능을 살짝 손봤다.
 * 손 데려다 보니 대충 봤는데 따라다니게 하는게 fixed 로 했을 것이라 생각했는데 사이에 div 를 넣고 height 를 엄청 키우는 코드여서 당황했다.
+
+* <img src="/resource/img/blogsidebar(2).PNG"> <img src="/resource/img/blogsidebar(3).PNG"> 
+* tab 부분 나중에 좀 더 꾸미고 구분 잘 가게하고 Another Post 이름 좀 바꾸면 될 것 같다.
