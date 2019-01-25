@@ -56,8 +56,47 @@
     {%- endfor -%}  
   </ul>
 </div>
-
-
+<style>
+ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+ 
+ul.tabs li.current{
+  background: #ededed;
+  color: #222;
+}
+ 
+.tab-content{
+  display: none;
+  background: #ededed;
+  padding: 15px;
+}
+ 
+.tab-content.current{
+  display: inherit;
+}
+</style>
+<div class="col-box tabs">
+  <ul class="tabs">
+    <li class="tab-link current" data-tab="tab-1">menu1</li>
+    <li class="tab-link" data-tab="tab-2">menu2</li>
+  </ul>
+  <div id="tab-1" class="tab-content current">
+    <p>h1</p>
+  </div>
+  <div id="tab-2" class="tab-content">
+    <p>h2</p>
+  </div>
+</div>
 
 <div class="col-box post-toc hide">
   <div class="col-box-title">TOC</div>
@@ -69,9 +108,25 @@
   <div class="col-box-title">{{page.categories.last}}</div>
 
   <ul>
-    {% for post in site.categories[page.categories.last] limit:5 %}{% if post.title != null %}
+    {% for post in site.categories[page.categories.last] %}{% if post.title != null %}
     <li><span>{{ post.date | date: "%y.%m.%d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}{% endfor %}
   </ul>
 
 </div>
+
+<script>
+$(document).ready(function(){
+   
+  $('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+ 
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+ 
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
+ 
+})
+</script>
