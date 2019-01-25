@@ -66,10 +66,9 @@
   <ul class="post-list">
     <p>1</p>
     {% for category in site.categories %}
-    <p>2</p>
+    <p>cate : {{category}}</p>
+    <p>page : {{page.categories}} </p>
     {% if page.categories[page.categories.size - 1] == category[0] %}
-    <p>{{ category }}</p>
-    <p>3</p>
     {% endif %}
     {% endfor %}
     {% for post in site.posts limit:5 %}
