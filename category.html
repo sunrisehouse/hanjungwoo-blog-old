@@ -8,7 +8,10 @@ permalink: /category/
   <h1 class="page-heading">Category</h1>
 
   <script>
-    console.log( location.href );
+    var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
+    aaa = aaa.replace('%20',' ');
+    $('.category').css('display','none');
+    $('#'+aaa).css('display','block');
   </script>
 
   <ul class="post-list">
