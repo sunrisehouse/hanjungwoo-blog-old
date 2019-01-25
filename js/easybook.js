@@ -104,6 +104,7 @@ function TOCize(toc, content, matchHeightTo) {
     var scrolldummy = make('div');
     toc.appendChild(scrolldummy);
     toc.appendChild(uls[0]);
+    $(toc).find('.post-toc-content').appendChild(uls[0]);
     toc.style.display = 'block';
 
     var maxHeightTOC = '';
