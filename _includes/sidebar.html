@@ -31,7 +31,16 @@
     {%- if category_level1[0] != nil -%}
     <li>
         <p>{{ category_level1[0] }} </p>
-        
+        <ul>
+            {%- for category_level2 in category_level1[1] -%}
+            {%- if category_level2[0] != nil -%}
+              <li>
+                <p>{{ category_level2[0] } </p>
+                
+              </li>
+            {%- endif -%}
+            {%- endfor -%}
+            </ul>
       </li>
     {%- endif -%}
     {%- endfor -%}  
