@@ -13,7 +13,7 @@ permalink: /category/
 {% assign category = categories | split:',' | sort %}
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-<div class="category" id="{{ word | replace: ' ','_' }}">
+<div class="category" id="{{ word | replace: ' ','_' | replace: '#','____'}}">
 <h2>{{ word | upcase }}</h2>
 <ul>
 {% for post in site.categories[word] %}{% if post.title != null %}
@@ -34,7 +34,7 @@ permalink: /category/
       $('#'+aaa).css('display','block');
       console.log(aaa);
       
-      $('#col-box-category').find('a').on('click',function(){
+      $('#col-box-category a').click(function(){
         alert('aaaa');      
         var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
         $('.category').css('display','none');
