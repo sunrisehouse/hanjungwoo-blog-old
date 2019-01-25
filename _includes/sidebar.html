@@ -56,47 +56,19 @@
     {%- endfor -%}  
   </ul>
 </div>
-<style>
-ul.tabs{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-ul.tabs li{
-  background: none;
-  color: #222;
-  display: inline-block;
-  padding: 10px 15px;
-  cursor: pointer;
-}
- 
-ul.tabs li.current{
-  background: #ededed;
-  color: #222;
-}
- 
-.tab-content{
-  display: none;
-  background: #ededed;
-  padding: 15px;
-}
- 
-.tab-content.current{
-  display: inherit;
-}
-</style>
-<div class="col-box tabs">
+
+<div class="col-box post-toc tabs">
   <ul class="tabs">
     <li class="tab-link current" data-tab="tab-1">TOC</li>
     <li class="tab-link" data-tab="tab-2">Another Post</li>
   </ul>
   <div id="tab-1" class="tab-content current">
-    <div class="post-toc hide">
+    <div class="">
       <div class="col-box-title">TOC</div>
     </div>
   </div>
   <div id="tab-2" class="tab-content">
-    <div class="post-toc hide">
+    <div>
       <div class="col-box-title">{{page.categories.last}}</div>
       <ul>
       {% for post in site.categories[page.categories.last] %}{% if post.title != null %}
@@ -106,3 +78,33 @@ ul.tabs li.current{
     </div>
   </div>
 </div>
+
+<style>
+    ul.tabs{
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    ul.tabs li{
+      background: none;
+      color: #222;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+     
+    ul.tabs li.current{
+      background: #ededed;
+      color: #222;
+    }
+     
+    .tab-content{
+      display: none;
+      background: #ededed;
+      padding: 15px;
+    }
+     
+    .tab-content.current{
+      display: inherit;
+    }
+</style>
