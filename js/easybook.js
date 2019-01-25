@@ -102,9 +102,9 @@ function TOCize(toc, content, matchHeightTo) {
     if (!cnt) return false;
 
     var scrolldummy = make('div');
-    //toc.appendChild(scrolldummy);
+    //toc.appendChild(scrolldummy);  // div 넣는다
     //toc.appendChild(uls[0]); // 원래 이거였고 $(toc).find('.post-toc-content').append(uls[0]); 로 바꿔서 .post-toc-content 아래에 toc ul 이 생기게 했다.
-    $(toc).find('.post-toc-content').append(scrolldummy);
+    $(toc).append(scrolldummy);
     $(toc).find('.post-toc-content').append(uls[0]);
     toc.style.display = 'block';
 
