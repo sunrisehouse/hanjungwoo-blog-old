@@ -16,6 +16,8 @@ date:   2019-01-24 08:00
 
 ## 개발
 
+### javascript
+
 * <img src="/resource/img/blogcategorypage.PNG"> category.html 에 이 코드를 넣었다.
 
 * 두 함수가 있다
@@ -25,10 +27,13 @@ date:   2019-01-24 08:00
     2. category 페이지에서 sidebar 에 있는 category 를 클릭했을 때 이벤트 코드
         * 다 안보이게 하고 누른 category 의 a tag 안 href 속성 값의 마지막 id 를 parsing 해서 해당 id 만 보이게 했다.
 
+### id 변환
+
 * html 태그 안 id 값이 띄어쓰기와 '_' 외 다른 문자가 안돼서 그래서 고생 했다.
 * 그래서 다음과 같이 id 값을 변환해 주었다. ('+'왜'#' 은 "c++" category 와 "c#" category 때문에 '_' 개수로 변환했다. 그래서 아마 "+#", "#+" 를 구분 못할 것이다.)
 * <img src="/resource/img/blogcategorypage(2).PNG">
 * <img src="/resource/img/blogcategorypage(3).PNG">
 
+### 결과
 * <img src="/resource/img/blogcategorypage(1).PNG"> 
     이렇게 sidebar 의 Android 를 누르게 되면 Android 에 속한 post 들만 보이게 된다.
