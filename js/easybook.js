@@ -104,6 +104,9 @@ function TOCize(toc, content, matchHeightTo) {
     var scrolldummy = make('div');
     toc.appendChild(scrolldummy);
     toc.appendChild(uls[0]);
+    console.log($(toc));
+    console.log($(toc).find('.post-toc-content'));
+    console.log(uls);
     $(toc).find('.post-toc-content').append(uls[0]);
     toc.style.display = 'block';
 
