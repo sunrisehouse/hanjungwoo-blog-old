@@ -66,12 +66,11 @@
 
 
 <div class="col-box post-toc hide">
-  <div class="col-box-title">유사한 글</div>
+  <div class="col-box-title">유사 글</div>
 
   <p>page : {{ page.categories.last }} </p>
   {% for category in site.categories %}
-  <p>cate : {{ category }}</p>
-  
+  <p>cate : {{ category[0] }}</p>
   {% endfor %}
 
 
