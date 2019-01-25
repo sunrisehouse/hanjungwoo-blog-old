@@ -43,17 +43,25 @@
                 <p>{{ category_level3[0] }}</p>
               </li>
               {%- else -%}
-
+              <li>
+                <p>{{ category_level3[0] }}</p>
+              </li>
               {%- endif -%}
               {%- endfor -%}
             </ul>
           </li>
         {%- else -%}
+          <li>
+            <p>{{ category_level2[0] }}</p>
+          </li>
         {%- endif -%}
         {%- endfor -%}
         </ul>
       </li>
     {%- else -%}
+      <li>
+        <p>{{ category_level1[0] }}{% site.categories.{{category_level1[0]}}.size %}</p>
+      </li>
     {%- endif -%}
     {%- endfor -%}  
   </ul>
