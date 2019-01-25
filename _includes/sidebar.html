@@ -14,6 +14,7 @@
     {% endfor %}
   </p>
 </div>
+
 <!--
 <div class="col-box">
   <div class="col-box-title">Newest Posts</div>
@@ -24,6 +25,7 @@
   </ul>
 </div>
 -->
+
 <div class="col-box" id="col-box-category">
   <div class="col-box-title">Category</div>
   <ul>
@@ -57,4 +59,18 @@
 
 <div class="col-box post-toc hide">
   <div class="col-box-title">TOC</div>
+</div>
+
+<div class="col-box post-toc hide">
+  <div class="col-box-title">유사한 글</div>
+  <ul class="post-list">
+    {% for category in site.categories %}
+    {% if page.categories[page.categories.size - 1] == category[0] %}
+    {{ category }}
+    {% endif %}
+    {% endfor %}
+    {% for post in site.posts limit:5 %}
+      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>

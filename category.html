@@ -28,19 +28,17 @@ permalink: /category/
 </div>
 
 <script>
-    $(document).ready(function(){
-      var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
+  $(document).ready(function(){
+    var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
+    $('.category').css('display','none');
+    $('#'+aaa).css('display','block');
+    console.log('reload : '+aaa);
+      
+    $('#col-box-category a').click(function(){     
+      var aaa = $(this).attr('href').split('/')[location.href.split('/').length-1].substring(1);
       $('.category').css('display','none');
       $('#'+aaa).css('display','block');
-      console.log('reload : '+aaa);
-      
-
-      $('#col-box-category a').click(function(){     
-        var aaa = $(this).attr('href').split('/')[location.href.split('/').length-1].substring(1);
-        $('.category').css('display','none');
-        $('#'+aaa).css('display','block');
-        console.log('click : ' + aaa);
-      })
+      console.log('click : ' + aaa);
     })
-
-  </script>
+  })
+</script>
