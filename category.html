@@ -33,15 +33,16 @@ permalink: /category/
       $('.category').css('display','none');
       $('#'+aaa).css('display','block');
       console.log(aaa);
+      
+      $('#col-box-category').find('a').on('click',function(){
+        alert('aaaa');      
+        var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
+        $('.category').css('display','none');
+        console.log(aaa);
+        $('#'+aaa).css('display','block');
+        
+        alert(aaa);
+      })
     })
 
-    $('#col-box-category a').on('click',function(){
-      alert('aaaa');      
-      var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
-      $('.category').css('display','none');
-      console.log(aaa);
-      $('#'+aaa).css('display','block');
-      
-      alert(aaa);
-    })
   </script>
