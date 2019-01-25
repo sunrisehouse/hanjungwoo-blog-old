@@ -30,17 +30,17 @@
     {%- for category_level1 in site.category -%}
     {%- if category_level1[0] != nil -%}
       <li>
-        <a href="{{ site.url }}/category/#{{ category_level1[0] }}">{{ category_level1[0] }} {% if category_level1[1] == nil %}{% for category in site.categories %}{% if category.first == category_level1[0] %}({{ category[1].size }}) {% endif %}{% endfor %}{% endif %}</a>
+        <a href="{{ site.url }}/category/#{{ category_level1[0] | replace: ' ','_' }}">{{ category_level1[0] }} {% if category_level1[1] == nil %}{% for category in site.categories %}{% if category.first == category_level1[0] %}({{ category[1].size }}) {% endif %}{% endfor %}{% endif %}</a>
         <ul>
         {%- for category_level2 in category_level1[1] -%}
         {%- if category_level2[0] != nil -%}
           <li>
-            <a href="{{ site.url }}/category/#{{ category_level2[0] }}">{{ category_level2[0] }} {% if category_level2[1] == nil %}{% for category in site.categories %}{% if category.first == category_level2[0] %}({{ category[1].size }}) {% endif %}{% endfor %}{% endif %}</a>
+            <a href="{{ site.url }}/category/#{{ category_level2[0] | replace: ' ','_' }}">{{ category_level2[0] }} {% if category_level2[1] == nil %}{% for category in site.categories %}{% if category.first == category_level2[0] %}({{ category[1].size }}) {% endif %}{% endfor %}{% endif %}</a>
             <ul>
               {%- for category_level3 in category_level2[1] -%}
               {%- if category_level3[0] != nil -%}
               <li>
-                <a href="{{ site.url }}/category/#{{ category_level3[0] }}">{{ category_level3[0] }} {% if category_level3[1] == nil %}{% for category in site.categories %}{% if category.first == category_level3[0] %}({{ category[1].size }}) {% endif %}{% endfor %}{% endif %}</a>
+                <a href="{{ site.url }}/category/#{{ category_level3[0] | replace: ' ','_' }}">{{ category_level3[0] }} {% if category_level3[1] == nil %}{% for category in site.categories %}{% if category.first == category_level3[0] %}({{ category[1].size }}) {% endif %}{% endfor %}{% endif %}</a>
               </li>
               {%- endif -%}
               {%- endfor -%}
