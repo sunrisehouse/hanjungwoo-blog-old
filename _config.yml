@@ -4,7 +4,7 @@ url: "https://hanjungwoo1102.github.io"    # the protocol and hostname of your s
 baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
 description: >
-  One or more sentences introducing this blog.
+  Hi.
 
 # Your information
 email: hanjungwoo1102@gmail.com
