@@ -97,36 +97,16 @@ ul.tabs li.current{
     <p>h2</p>
   </div>
 </div>
+
+<div class="col-box post-toc hide">
+  <div class="col-box-title">TOC</div>
+</div>
+
 <div class="col-box post-toc hide">
   <div class="col-box-title">{{page.categories.last}}</div>
-
   <ul>
     {% for post in site.categories[page.categories.last] %}{% if post.title != null %}
     <li><span>{{ post.date | date: "%y.%m.%d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}{% endfor %}
   </ul>
-
 </div>
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
-
-
-
-
-
-<script>
-$(document).ready(function(){
-   
-  $('ul.tabs li').click(function(){
-    var tab_id = $(this).attr('data-tab');
- 
-    $('ul.tabs li').removeClass('current');
-    $('.tab-content').removeClass('current');
- 
-    $(this).addClass('current');
-    $("#"+tab_id).addClass('current');
-  })
- 
-})
-</script>
