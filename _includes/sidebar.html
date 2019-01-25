@@ -64,10 +64,7 @@
 <div class="col-box post-toc hide">
   <div class="col-box-title">유사한 글</div>
 
-  {% for category in site.categories %}
-    <p>cate : {{category}}</p>
-    <p>page : {{page.categories}} </p>
-  {% endfor %}
+  <p>page : {{page.categories}} </p>
 
   <ul class="post-list">
     {% for post in site.posts limit:5 %}
