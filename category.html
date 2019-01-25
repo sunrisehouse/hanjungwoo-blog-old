@@ -13,7 +13,7 @@ permalink: /category/
 {% assign category = categories | split:',' | sort %}
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-<div class="category" id="{{ word | replace: ' ','_' | replace: '#','____'}}">
+<div class="category" id="{{ word | replace: ' ','_' | replace: '#','____'| replace: '+','__'}}">
 <h2>{{ word | upcase }}</h2>
 <ul>
 {% for post in site.categories[word] %}{% if post.title != null %}
