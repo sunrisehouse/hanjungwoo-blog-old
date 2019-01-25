@@ -66,19 +66,12 @@
 
 
 <div class="col-box post-toc hide">
-  <div class="col-box-title">유사 글</div>
+  <div class="col-box-title">{{page.categories.last}}</div>
 
-  <p>page : {{ page.categories.last }} </p>
   <ul>
     {% for post in site.categories[page.categories.last] %}{% if post.title != null %}
     <li><span>{{ post.date | date: "%y.%m.%d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}{% endfor %}
   </ul>
 
-
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
 </div>
