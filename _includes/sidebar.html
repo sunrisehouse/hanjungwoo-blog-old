@@ -69,7 +69,7 @@
   <div class="col-box-title">{{page.categories.last}}</div>
 
   <ul>
-    {% for post in site.categories[page.categories.last] %}{% if post.title != null %}
+    {% for post in site.categories[page.categories.last] limit:5 %}{% if post.title != null %}
     <li><span>{{ post.date | date: "%y.%m.%d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}{% endfor %}
   </ul>
