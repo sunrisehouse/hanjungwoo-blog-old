@@ -7,23 +7,6 @@ permalink: /category/
 <div class="home">
   <h1 class="page-heading">Category</h1>
 
-  <script>
-    $(document).ready(function(){
-      var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
-      $('.category').css('display','none');
-      $('#'+aaa).css('display','block');
-      console.log(aaa);
-    })
-
-    $('#col-box-category a').on('click',function(){
-      alert('aaaa');      
-      var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
-      $('.category').css('display','none');
-      $('#'+aaa).css('display','block');
-      alert(aaa);
-    })
-  </script>
-
   <ul class="post-list">
 
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
@@ -45,8 +28,20 @@ permalink: /category/
 </div>
 
 <script>
-$(document).ready(function(){
-  console.log($(location).attr('search'));
-})
+    $(document).ready(function(){
+      var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
+      $('.category').css('display','none');
+      $('#'+aaa).css('display','block');
+      console.log(aaa);
+    })
 
-</script>
+    $('#col-box-category a').on('click',function(){
+      alert('aaaa');      
+      var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
+      $('.category').css('display','none');
+      console.log(aaa);
+      $('#'+aaa).css('display','block');
+      
+      alert(aaa);
+    })
+  </script>
