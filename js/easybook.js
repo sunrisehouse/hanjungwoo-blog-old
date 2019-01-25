@@ -102,8 +102,8 @@ function TOCize(toc, content, matchHeightTo) {
     if (!cnt) return false;
 
     var scrolldummy = make('div');
-    //toc.appendChild(scrolldummy);  // div 넣는다
-    //toc.appendChild(uls[0]); // 원래 이거였고 $(toc).find('.post-toc-content').append(uls[0]); 로 바꿔서 .post-toc-content 아래에 toc ul 이 생기게 했다.
+    //toc.appendChild(scrolldummy);  // 원래 코드. $(toc).prepend(scrolldummy); 로 바꿔서 마지막 child 다음이 아니라 바로 맨 처음에 넣게 함.
+    //toc.appendChild(uls[0]); // 원래 코드. $(toc).find('.post-toc-content').append(uls[0]); 로 바꿔서 .post-toc-content 아래에 toc ul 이 생기게 했다.
     $(toc).prepend(scrolldummy);
     $(toc).find('.post-toc-content').append(uls[0]);
     toc.style.display = 'block';
