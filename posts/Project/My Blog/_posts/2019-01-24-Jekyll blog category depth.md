@@ -57,6 +57,7 @@ category: MyBlog
 * 하지만 depth 가 4 이상인 tree 를 만들려면 재귀 함수를 써야할 것 같은데 함수를 쓸 수 있나 모르겠다.
 * 그리고 카테고리를 수정하면 post 폴더의 구조와 _config.yml 에 저장되어 있는 category data 둘 다를 바꿔줘야 한다.
 
-#### leaf category 에 post 수 표시, <a> 로 category 페이지로 이동하기.
+#### leaf category 에 post 수 표시, 링크 이용해 category 페이지로 이동하기.
 
-* 다음은 카테고리 별로 post 수 표시하기랑 누르면 그 카테고리의 post 들이 나오게 하기다.
+* 다음은 카테고리 별로 post 수 표시하기와 누르면 그 category의 post 들이 나오게 하기다.
+* 카테고리 별 post 수 표시하려면 일단 leaf category 를 찾아야한다.
