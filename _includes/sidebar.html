@@ -71,7 +71,7 @@
   <p>page : {{ page.categories.last }} </p>
   {% for category in site.categories %}
   {% if category[0] == page.categories.last %}
-  <p>cate : {{ category[1] }} </p>
+  <p>cate : {{ category[0] }} </p>
   {% endif %}
   {% endfor %}
 
