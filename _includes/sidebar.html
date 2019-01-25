@@ -91,22 +91,18 @@ ul.tabs li.current{
     <li class="tab-link" data-tab="tab-2">Another Post</li>
   </ul>
   <div id="tab-1" class="tab-content current">
-    <p>h1</p>
+    <div class="post-toc hide">
+      <div class="col-box-title">TOC</div>
+    </div>
   </div>
   <div id="tab-2" class="tab-content">
-    <p>h2</p>
+    <div class="post-toc hide">
+      <div class="col-box-title">{{page.categories.last}}</div>
+      <ul>
+      {% for post in site.categories[page.categories.last] %}{% if post.title != null %}
+        <li><span>{{ post.date | date: "%y.%m.%d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}{% endfor %}
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">{{page.categories.last}}</div>
-  <ul>
-    {% for post in site.categories[page.categories.last] %}{% if post.title != null %}
-    <li><span>{{ post.date | date: "%y.%m.%d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}{% endfor %}
-  </ul>
 </div>
