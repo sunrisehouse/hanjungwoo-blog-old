@@ -69,6 +69,12 @@
   <div class="col-box-title">유사한 글</div>
 
   <p>page : {{ page.categories.last }} </p>
+  {% for category in site.categories %}
+  <p>cate : {{ category }}</p>
+  {% if category[0] == page.categories.last %}
+  {% category[1] %}
+  {% endif %}
+  {% endfor %}
 
 
   <ul class="post-list">
