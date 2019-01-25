@@ -30,17 +30,17 @@
     {%- for category_level1 in site.category -%}
     {%- if category_level1[0] != nil -%}
       <li>
-        <p>{{ category_level1[0] }}={% for category in site.categories %}{{ category.first }}{% if category == category_level1[0] %}({{ category.size }}) {% endif %}{% endfor %}</p>
+        <p>{{ category_level1[0] }}={% for category in site.categories %}{% if category.first == category_level1[0] %}({{ category.size }}) {% endif %}{% endfor %}</p>
         <ul>
         {%- for category_level2 in category_level1[1] -%}
         {%- if category_level2[0] != nil -%}
           <li>
-            <p>{{ category_level2[0] }}={% for category in site.categories %}{{ category.first }}{% if category == category_level2[0] %}({{ category.size }}) {% endif %}{% endfor %}</p>
+            <p>{{ category_level2[0] }}={% for category in site.categories %}{% if category.first == category_level2[0] %}({{ category.size }}) {% endif %}{% endfor %}</p>
             <ul>
               {%- for category_level3 in category_level2[1] -%}
               {%- if category_level3[0] != nil -%}
               <li>
-                <p>{{ category_level3[0] }}={% for category in site.categories %}{{ category.first }}{% if category == category_level3[0] %}({{ category.size }}) {% endif %}{% endfor %}</p>
+                <p>{{ category_level3[0] }}={% for category in site.categories %}{% if category.first == category_level3[0] %}({{ category.size }}) {% endif %}{% endfor %}</p>
               </li>
               {%- else -%}
               <li>
