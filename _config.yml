@@ -32,7 +32,9 @@ header:
     Category: /category/
     Portfolio: /portfolio/
 
-permalink: pretty
+permalink: /:categories/:title/
+
+
 plugins:
  - jekyll-paginate
  - jekyll-gist

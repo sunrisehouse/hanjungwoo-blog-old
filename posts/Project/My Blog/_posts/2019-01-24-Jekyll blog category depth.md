@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Github 블로그 Category Tree Depth 만들기"
+title:  "Github 블로그 Category Tree Depth 늘리기"
 date:   2019-01-24 08:00
 category: MyBlog
 ---
