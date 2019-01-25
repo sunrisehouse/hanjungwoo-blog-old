@@ -42,25 +42,13 @@
               <li>
                 <p>{{ category_level3[0] }}{% for category in site.categories %}{% if category.first == category_level3[0] %}({{ category[1].size }}) {% endif %}{% endfor %}</p>
               </li>
-              {%- else -%}
-              <li>
-                <p>{{ category_level3[0] }}</p>
-              </li>
               {%- endif -%}
               {%- endfor -%}
             </ul>
           </li>
-        {%- else -%}
-          <li>
-            <p>{{ category_level2[0] }}</p>
-          </li>
         {%- endif -%}
         {%- endfor -%}
         </ul>
-      </li>
-    {%- else -%}
-      <li>
-        <p>{{ category_level1[0] }}</p>
       </li>
     {%- endif -%}
     {%- endfor -%}  
