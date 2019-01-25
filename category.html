@@ -32,13 +32,14 @@ permalink: /category/
       var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
       $('.category').css('display','none');
       $('#'+aaa).css('display','block');
-      console.log(aaa);
+      console.log('reload : '+aaa);
       
+
       $('#col-box-category a').click(function(){     
-        var aaa = location.href.split('/')[location.href.split('/').length-1].substring(1);
+        var aaa = $(this).attr('href')[location.href.split('/').length-1].substring(1);
         $('.category').css('display','none');
         $('#'+aaa).css('display','block');
-        console.log(aaa);
+        console.log('click : ' + aaa);
       })
     })
 
