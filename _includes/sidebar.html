@@ -29,7 +29,10 @@
   <ul>
     {%- for category_level1 in site.category -%}
     {%- if category_level1[0] != nil -%}
-      
+    <li>
+        <p>{{ category_level1[0] }} </p>
+        
+      </li>
     {%- endif -%}
     {%- endfor -%}  
   </ul>
