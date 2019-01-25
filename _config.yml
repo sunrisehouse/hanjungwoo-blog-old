@@ -1,6 +1,6 @@
 # Site settings
 title: HanJungwoo
-url: "http://hanjungwoo1102.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+url: "https://hanjungwoo1102.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
 description: >
