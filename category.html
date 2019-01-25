@@ -6,6 +6,11 @@ permalink: /category/
 
 <div class="home">
   <h1 class="page-heading">Category</h1>
+
+  <script>
+    console.log( location );
+  </script>
+
   <ul class="post-list">
 
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
